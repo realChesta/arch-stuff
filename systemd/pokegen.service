@@ -1,0 +1,9 @@
+[Unit]
+Description=Service to start pokegen script to create a new bootscreen at every boot
+
+[Service]
+WorkingDirectory=/usr/share/pokegen
+ExecStart=/usr/share/pokegen/pokegen.sh
+
+[Install]
+WantedBy=multi-user.target

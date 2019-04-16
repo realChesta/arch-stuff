@@ -1,0 +1,12 @@
+[Unit]
+Before=sleep.target
+Description=Lock using gnome-screensaver on resume
+
+[Service]
+User=%I
+Environment=DISPLAY=:0
+ExecStart=gnome-screensaver-command -l
+ExecStartPost=sleep 2
+
+[Install]
+WantedBy=sleep.target
