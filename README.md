@@ -80,7 +80,7 @@ In this repo I gather various useful scripts and configurations that I use in my
 ## Misc. Packages
 
 ```
-dropbox, tty-clock, peaclock, neofetch, gnome-termina-transparency
+dropbox, tty-clock, peaclock, neofetch, gnome-terminal-transparency
 ```
 
 ## Theme
@@ -99,6 +99,7 @@ dropbox, tty-clock, peaclock, neofetch, gnome-termina-transparency
 * [Consolas (Powerline patched)](https://github.com/Znuff/consolas-powerline)
 * Roboto [AUR: `ttf-roboto`]
 * Emoji [AUR: `ttf-emojione`]
+* Google Sans (Product Sans) [AUR: `ttf-google-sans`]
 
 ## Fun
 * AUR: `ctris`, `yetris`
@@ -106,5 +107,4 @@ dropbox, tty-clock, peaclock, neofetch, gnome-termina-transparency
 * [asciiquarium](https://robobunny.com/projects/asciiquarium/html/)
 * AUR: `nyancat`
 * [cli pokedex](https://github.com/realChesta/pokedex-cli/tree/transparency)
-
 * [Pokemon Terminal](https://github.com/realChesta/Pokemon-Terminal/tree/print-path)
