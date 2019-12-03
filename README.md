@@ -75,7 +75,7 @@ In this repo I gather various useful scripts and configurations that I use in my
       prompt_segment blue $CURRENT_FG "%$(( $COLUMNS - 61 ))<...<%3~%<<"
     }
     ```
-    _(replace `prompt_dir()` in `~/.oh-my-zsh/themes/agnoster.zsh-theme`)_
+    _(add this to .zshrc)_
 
 ## Misc. Packages
 
