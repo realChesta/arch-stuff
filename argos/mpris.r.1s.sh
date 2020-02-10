@@ -4,7 +4,7 @@ status="$(playerctl status 2>&1)"
 current=$(playerctl metadata --format "{{ title }} ~ {{ artist }}")
 
 if (echo "$status" | grep -q "Stopped") || (echo "$status" | grep -q "No players"); then
-    echo "whew"
+    echo "---"
     exit
 fi
 
