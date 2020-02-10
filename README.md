@@ -32,6 +32,8 @@ In this repo I gather various useful scripts and configurations that I use in my
 * Workspace Indicator  
 * Media Player Indicator 
   * [My fork without icon](https://github.com/realChesta/gnome-shell-extensions-mediaplayer)
+* Argos
+  * see [/argos](./argos)
 
 ### Tweaks
 
