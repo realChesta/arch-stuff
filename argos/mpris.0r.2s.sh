@@ -43,9 +43,9 @@ fi
 
 echo "$status_char $current"
 echo "---"
-echo "Next | iconName=media-skip-forward-symbolic bash='playerctl next $selectedPlayer' terminal=false"
-echo "$play_pause"
 echo "Previous | iconName=media-skip-backward-symbolic bash='playerctl previous $selectedPlayer' terminal=false"
+echo "$play_pause"
+echo "Next | iconName=media-skip-forward-symbolic bash='playerctl next $selectedPlayer' terminal=false"
 
 echo "---"
 echo "Active Player"
