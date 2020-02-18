@@ -12,7 +12,7 @@ fi
 while IFS= read -r item; do
     if [ -n "$fileSelectedPlayer" ] && [ "$fileSelectedPlayer" == "$item" ]; then
         selectedPlayer="$item"
-        playerMenu="$playerMenu-->$item | bash='echo $item > $playerFile' terminal=false\n"
+        playerMenu="$playerMenu--$item | iconName=media-playback-start-symbolic bash='echo $item > $playerFile' terminal=false\n"
     else
         playerMenu="$playerMenu--$item | bash='echo $item > $playerFile' terminal=false\n"
     fi
@@ -27,7 +27,10 @@ fi
 status="$(playerctl status $selectedPlayer 2>&1)"
 current="$(playerctl metadata $selectedPlayer --format '{{ title }} ~ {{ artist }}')"
 
-if (echo "$status" | grep -q "Stopped") || (echo "$status" | grep -q "No players"); then
+if (echo "$status" | grep -q "No players"); then
+    echo "---"
+    exit
+elif (echo "$status" | grep -q "Stopped"); then
     status_char="⏹"
     current=""
 elif echo "$status" | grep -q "Paused"; then
